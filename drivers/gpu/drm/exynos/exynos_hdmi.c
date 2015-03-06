@@ -984,9 +984,9 @@ static void hdmi_reg_infoframe(struct hdmi_context *hdata,
 
 static bool hdmi_is_connected(void *ctx)
 {
-	struct hdmi_context *hdata = ctx;
+	//struct hdmi_context *hdata = ctx;
 
-	return hdata->hpd;
+	return true; //hdata->hpd;
 }
 
 static struct edid *hdmi_get_edid(void *ctx, struct drm_connector *connector)
